@@ -22,3 +22,21 @@ def DTAccuracy(clf, features_test, labels_test):
 	pred = clf.predict(features_test)
 	acc = accuracy_score(pred, labels_test)
 	return acc
+
+def KNNAccuracy(clf, features_test, labels_test):
+
+	pred = clf.predict(features_test)
+	acc = accuracy_score(pred, labels_test)
+	return acc	
+
+def AdaBoostAccuracy(clf, features_test, labels_test):
+
+	pred = clf.predict(features_test)
+	acc = accuracy_score(pred, labels_test)
+	return acc
+
+def RandomForestAccuracy(clf, features_test, labels_test):
+
+	pred = clf.predict(features_test)
+	acc = accuracy_score(pred, labels_test)
+	return acc

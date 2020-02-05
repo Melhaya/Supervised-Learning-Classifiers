@@ -16,7 +16,7 @@ features_train, labels_train, features_test, labels_test = makeTerrainData()
 ########################## SVM #################################
 
 SVMmodel = SVC(kernel="linear", gamma=0.1, C=1)   #Bigger C cause the network to overfit the training set
-												  # Gamma defines how far the influence of a single training example reaches (Low value -> far reach)
+						  # Gamma defines how far the influence of a single training example reaches (Low value -> far reach)
 
 SVMmodel.fit(features_train, labels_train)
 accuracy = SVMccuracy(SVMmodel, features_test, labels_test)

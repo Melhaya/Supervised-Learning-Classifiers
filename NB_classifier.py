@@ -21,15 +21,15 @@ grade_slow = [features_train[ii][0] for ii in range(0, len(features_train)) if l
 bumpy_slow = [features_train[ii][1] for ii in range(0, len(features_train)) if labels_train[ii]==1]
 
 
-clf = GaussianNB()
-clf.fit(features_train, labels_train)
+NBModel = GaussianNB()
+NBModel.fit(features_train, labels_train)
 
 
-accuracy = NBAccuracy(clf, features_test, labels_test)
+accuracy = NBAccuracy(NBModel, features_test, labels_test)
 print("Accuracy of NB classifier is ", accuracy)
 
 
-prettyPicture(clf, features_test, labels_test)
+prettyPicture(NBModel, features_test, labels_test)
 
 
 

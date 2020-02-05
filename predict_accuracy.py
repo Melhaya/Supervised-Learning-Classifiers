@@ -16,3 +16,9 @@ def SVMccuracy(clf, features_test, labels_test):
 	pred = clf.predict(features_test)
 	acc = accuracy_score(pred, labels_test)
 	return acc
+
+def DTAccuracy(clf, features_test, labels_test):
+
+	pred = clf.predict(features_test)
+	acc = accuracy_score(pred, labels_test)
+	return acc

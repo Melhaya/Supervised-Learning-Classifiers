@@ -23,6 +23,6 @@ DTModel = tree.DecisionTreeClassifier(min_samples_split=50)
 DTModel.fit(features_train, labels_train)
 
 accuracy = DTAccuracy(DTModel, features_test, labels_test)
-print("Accuracy of Tree decision classifier is ", accuracy)
+print("Accuracy of Decision Tree classifier is ", accuracy)
 
 prettyPicture(DTModel, features_test, labels_test)

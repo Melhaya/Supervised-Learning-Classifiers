@@ -30,7 +30,7 @@ RandomForestModel.fit(features_train, labels_train)
 
 
 accuracy = RandomForestAccuracy(RandomForestModel, features_test, labels_test)
-print("Accuracy of AdaBoost classifier is ", accuracy)
+print("Accuracy of Random Forest classifier is ", accuracy)
 
 prettyPicture(RandomForestModel, features_test, labels_test)
 
